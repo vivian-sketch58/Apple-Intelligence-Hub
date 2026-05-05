@@ -1,0 +1,119 @@
+Apple Product Catalog — Apple Singapore (as of August 22, 2025)
+================================================================
+
+iPhone — Models, Specifications, Prices & Links
+------------------------------------------------
+
+1. iPhone 16 Pro / Pro Max
+- Starting Price: From S$1,599
+- Key Specs:
+  * A18 Pro chip with 6-core GPU
+  * Pro camera system: 48MP Fusion main, Ultra Wide, Telephoto
+  * Titanium frame, Action Button, Apple Intelligence
+- Link: https://www.apple.com/sg/iphone-16-pro/
+
+2. iPhone 16 / 16 Plus
+- Starting Price: From S$1,299
+- Key Specs:
+  * A18 chip with 5-core GPU
+  * Dual-camera: 48MP + 12MP Ultra Wide
+  * Aluminium frame, Action Button, Apple Intelligence
+- Link: https://www.apple.com/sg/shop/buy-iphone/iphone-16
+
+3. iPhone 16e
+- Starting Price: From S$949
+- Key Specs:
+  * 6.1" Super Retina XDR OLED
+  * Compact design, Apple Intelligence
+- Link: https://www.apple.com/sg/shop/buy-iphone/iphone-16e
+
+4. iPhone 15 / 15 Plus
+- Starting Price: From ~S$1,099
+- Key Specs:
+  * A16 Bionic chip, Dynamic Island
+  * 48MP Main Camera
+- Link: https://www.apple.com/sg/shop/buy-iphone/iphone-15
+
+
+iPad — Models, Specifications, Prices & Links
+---------------------------------------------
+
+5. iPad Pro (11" & 13", M4)
+- Starting Price: From S$1,499
+- Key Specs:
+  * M4 chip with up to 10-core CPU & GPU
+  * Ultra Retina XDR OLED display, ProMotion
+  * Pro cameras, Pencil Pro & Magic Keyboard support
+- Link: https://www.apple.com/sg/shop/buy-ipad/ipad-pro
+
+6. iPad Air (11" & 13", M3)
+- Starting Price: From S$899
+- Key Specs:
+  * M3 chip, 8-core CPU, 9-core GPU
+  * Liquid Retina display with P3 color, 600 nits brightness
+  * Pencil Pro & Magic Keyboard support
+- Link: https://www.apple.com/sg/shop/buy-ipad/ipad-air
+
+7. iPad (11", A16)
+- Starting Price: From S$499
+- Key Specs:
+  * A16 chip
+  * All-screen Liquid Retina display
+  * Supports Pencil & Magic Keyboard Folio
+- Link: https://www.apple.com/sg/ipad-11/
+
+
+Mac — Models, Specifications, Prices & Links
+--------------------------------------------
+
+8. MacBook Air (13" & 15", M4)
+- Starting Price: From S$1,499
+- Key Specs:
+  * M4 chip, 10-core CPU & GPU, 16-core Neural Engine
+  * 13.6" Liquid Retina, 18h battery
+  * MagSafe 3, Thunderbolt 4 ports, Apple Intelligence
+- Link: https://www.apple.com/sg/macbook-air/
+
+9. MacBook Pro (14" & 16", M4 family)
+- Starting Price: From S$2,199
+- Key Specs:
+  * M4 Pro or M4 Max chips
+  * Liquid Retina XDR display, nano-texture option
+  * Up to 24h battery life, Thunderbolt 5, Apple Intelligence
+- Link: https://www.apple.com/sg/mac/
+
+10. Other Macs:
+- iMac (24", M4)
+- Mac mini (M4 / M4 Pro)
+- Mac Studio (M4 Max / M3 Ultra)
+- Mac Pro (M2 Ultra)
+- Studio Display monitor
+- Link: https://www.apple.com/sg/mac/
+
+
+Apple Watch — Models, Specifications, Prices & Links
+----------------------------------------------------
+
+11. Apple Watch Series 10
+- Starting Price: From S$599
+- Key Specs:
+  * 42mm and 46mm sizes, Aluminum & Titanium options
+  * ECG, fitness sensors, water-resistant
+  * Largest display, thinnest design
+- Link: https://www.apple.com/sg/apple-watch-series-10/
+
+12. Apple Watch Ultra 2
+- Starting Price: From S$1,060
+- Key Specs:
+  * Rugged Titanium case, black or natural
+  * Dual-frequency GPS, scuba up to 40m
+  * Advanced sports and health features
+- Link: https://www.apple.com/sg/apple-watch-ultra-2/
+
+13. Apple Watch SE (2nd Gen)
+- Starting Price: From S$349
+- Key Specs:
+  * 40mm and 44mm Aluminum case
+  * Retina display, S-series chip
+  * Core fitness and safety features
+- Link: https://www.apple.com/sg/apple-watch-se/

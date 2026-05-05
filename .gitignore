@@ -1,0 +1,8 @@
+chromaDB/
+__pycache__/
+*.pyc
+*.pyo
+*.Zone.Identifier
+*:Zone.Identifier
+.env
+*.joblib.bak

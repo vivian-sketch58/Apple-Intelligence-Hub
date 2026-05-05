@@ -1,0 +1,90 @@
+# 🛠️ Apple Technical Support & Repair Knowledge Base
+
+This document provides comprehensive technical procedures for troubleshooting, repairing, and configuring Apple hardware, specifically focusing on the Self Service Repair program and advanced hardware recovery.
+
+## 1. The Self Service Repair Program
+
+Self Service Repair is designed for individuals with the knowledge and experience to repair electronic devices. It provides access to the same genuine Apple parts, tools, and repair manuals used at Apple Stores and Authorized Service Providers.
+
+### 📋 The 4-Step Technical Workflow
+
+1.  **Manual Consultation:** Read the model-specific repair manual to identify required parts, tools, and safety materials. Note the **Manual ID** in the introduction; it is mandatory for ordering genuine parts.
+2.  **Part & Tool Acquisition:** Purchase genuine parts and rent/buy professional-grade tools (e.g., heated display removal fixtures, battery presses) from the authorized Self Service Repair Store.
+3.  **Hardware Execution:** Follow the step-by-step technical instructions in the manual.
+4.  **Software Configuration:** Perform post-repair calibration using **Repair Assistant** or **System Configuration** to ensure full device functionality.
+
+## 2. Post-Repair Software Tools
+
+Hardware replacement is often only half the process. Modern Apple devices require software "pairing" to calibrate new sensors and verify security.
+
+### 🔧 Repair Assistant
+
+* **Purpose:** A built-in utility that installs calibration data and retrieves performance profiles from Apple servers.
+* **Requirements:** Internet connection (Wi-Fi), >20% battery, and the latest OS version.
+* **Procedure:**
+    1.  Navigate to `Settings` > `General` > `About`.
+    2.  Locate `Parts & Service History`.
+    3.  Tap `Restart & Finish Repair` to launch the utility.
+* **Critical Dependencies:** Calibration is required for Face ID, Touch ID, True Tone, and battery health reporting.
+
+### ⚙️ System Configuration
+
+Used primarily for Mac and iPhone component authentication. It establishes a secure link between biometric sensors and the **Secure Enclave** on the logic board, ensuring privacy and security standards are met.
+
+## 3. iPhone & iPad Recovery Procedures
+
+When an iPhone or iPad cannot be updated or restored normally, it must be placed into **Recovery Mode**. This allows the device to communicate with a computer (Mac or PC) for a firmware reinstall.
+
+### 🌀 Recovery Mode Sequences
+
+| Device Model | Key Sequence |
+| :--- | :--- |
+| **iPhone 8 or later** (incl. Face ID models) | Press and release **Vol Up**, then **Vol Down**. Press and hold the **Side button** until the recovery mode screen (computer icon) appears. |
+| **iPhone 7 / 7 Plus** | Press and hold the **Top (or Side)** and **Vol Down** buttons simultaneously. Keep holding until the recovery mode screen appears. |
+| **iPhone 6s or earlier** (incl. SE 1st gen) | Press and hold both the **Home** and **Top (or Side)** buttons simultaneously. Keep holding until the recovery mode screen appears. |
+| **iPad (No Home button)** | Press and release **Vol Up**, then **Vol Down**. Press and hold the **Top button** until the recovery mode screen appears. |
+| **iPad (With Home button)** | Press and hold both the **Home** and **Top (or Side)** buttons simultaneously. Keep holding until the recovery mode screen appears. |
+
+*Note: If you see the Apple logo, do not release the buttons. Continue holding until the recovery mode screen appears.*
+
+### 💻 DFU (Device Firmware Update) Mode
+
+The deepest restore possible. The screen remains **black** during DFU mode.
+
+* **Sequence:** Connect to computer > Vol Up > Vol Down > Hold Side (10s) > While holding Side, hold Vol Down (5s) > Release Side but keep holding Vol Down.
+
+## 4. Mac Technical Startup & Recovery
+
+macOS Recovery is a built-in system that helps you repair internal disks, reinstall macOS, or restore from a Time Machine backup.
+
+### 🧪 Entering macOS Recovery
+
+* **Apple Silicon (M-series):**
+    1.  Shut down the Mac.
+    2.  Press and hold the **Power button** until "Loading startup options" appears.
+    3.  Click **Options**, then click **Continue**.
+    4.  Select a user and enter their administrator password.
+* **Intel-based Mac:**
+    1.  Turn on the Mac and immediately press and hold **Command (⌘)-R** until you see an Apple logo or other image.
+    2.  Enter the administrator password if prompted.
+
+### 🛠️ Recovery Utilities
+
+Once in Recovery, the following tools are available:
+
+* **Reinstall macOS:** Downloads and reinstalls a fresh copy of the operating system.
+* **Disk Utility:** Used to repair or erase the internal startup disk.
+* **Restore from Time Machine:** Reverts the system to a previous state using an external backup.
+* **Terminal/Startup Security Utility:** Found in the Utilities menu for advanced configurations.
+
+### 🛡️ Safe Mode (Apple Silicon)
+
+* **Purpose:** Performs a directory check and prevents unnecessary startup items.
+* **Procedure:** Shut down > Hold Power button > Select disk > Hold **Shift** and click "Continue in Safe Mode."
+
+## 5. Official Documentation Directory
+
+* **Support Portal:** [support.apple.com/en-sg](https://support.apple.com/en-sg)
+* **iPhone Recovery Mode Detail:** [support.apple.com/en-us/101965](https://support.apple.com/en-us/101965)
+* **macOS Reinstallation Detail:** [support.apple.com/en-us/102488](https://support.apple.com/en-us/102488)
+* **Manuals & Tech Specs:** [support.apple.com/en-sg/docs](https://support.apple.com/en-sg/docs)

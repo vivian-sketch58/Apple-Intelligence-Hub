@@ -1,0 +1,13 @@
+langchain-groq 
+langchain-huggingface 
+langchain-chroma 
+langgraph==0.2.56
+langchain-community 
+sentence-transformers 
+unstructured 
+chromadb 
+gradio==6.13.0
+langchain
+langchain-google-genai
+joblib
+pandas
