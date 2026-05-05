@@ -11,7 +11,7 @@ import joblib
 import pandas as pd
 
 
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_core.tools import tool
 from langchain_chroma import Chroma
@@ -29,18 +29,18 @@ _HERE             = os.path.dirname(os.path.abspath(__file__))
 SOURCE_DATA_DIR   = os.path.join(_HERE, "apple data")
 DRIVE_DB_PATH     = os.path.join(_HERE, "chromaDB")
 EMBEDDING_MODEL   = "sentence-transformers/all-mpnet-base-v2"
-GEMINI_MODEL      = "gemini-2.5-flash"
+OPENAI_MODEL      = "gpt-4o-mini"
 SALARY_MODEL_PATH = os.path.join(_HERE, "salary_model.joblib")
 RUN_ROUTER_TESTS  = False                      # set True to run diagnostic routing tests at startup
 
 # FIX 1: validate API key at startup instead of silently assigning None
-_api_key = os.environ.get("GOOGLE_API_KEY")
+_api_key = os.environ.get("OPENAI_API_KEY")
 if not _api_key:
-    sys.exit("❌ GOOGLE_API_KEY environment variable is not set.")
-os.environ["GOOGLE_API_KEY"] = _api_key
+    sys.exit("❌ OPENAI_API_KEY environment variable is not set.")
+os.environ["OPENAI_API_KEY"] = _api_key
 
 # LLM
-llm = ChatGoogleGenerativeAI(model=GEMINI_MODEL, google_api_key=_api_key, temperature=0.2)
+llm = ChatOpenAI(model=OPENAI_MODEL, api_key=_api_key, temperature=0.2)
 
 # Embeddings + persistent Chroma client
 embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
@@ -49,7 +49,7 @@ persistent_client = chromadb.PersistentClient(path=DRIVE_DB_PATH)
 print("✅ Environment ready.")
 print("SOURCE_DATA_DIR   =", SOURCE_DATA_DIR)
 print("DRIVE_DB_PATH     =", DRIVE_DB_PATH)
-print("MODEL             =", GEMINI_MODEL)
+print("MODEL             =", OPENAI_MODEL)
 print("SALARY_MODEL_PATH =", SALARY_MODEL_PATH)
 
 salary_model_artifact = joblib.load(SALARY_MODEL_PATH)

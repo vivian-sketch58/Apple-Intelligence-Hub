@@ -1,7 +1,7 @@
 langchain==0.3.25
 langchain-core==0.3.62
 langchain-community==0.3.24
-langchain-google-genai==2.1.4
+langchain-openai
 langchain-huggingface==0.1.2
 langchain-chroma==0.2.4
 langchain-groq==0.3.2
