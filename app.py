@@ -831,7 +831,7 @@ with gr.Blocks(title="Apple Intelligence Hub") as demo:
         ]
         return "", chat_history
 
-    send.click(respond, [msg, chatbot], [msg, chatbot])
+    send.click(respond, [msg, chatbot], [msg, chatbot], api_name="chat")
     msg.submit(respond, [msg, chatbot], [msg, chatbot])
     clear.click(lambda: ([], ""), outputs=[chatbot, msg])
 
