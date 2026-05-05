@@ -482,7 +482,9 @@ def extract_final_text(agent_result) -> str:
 def _build_messages(state: dict) -> list:
     messages = []
     for turn in state.get("history", [])[-6:]:
-        if isinstance(turn, dict) and turn.get("role") == "user":
+        if isinstance(turn, (list, tuple)) and len(turn) == 2 and turn[0]:
+            messages.append(HumanMessage(content=turn[0]))
+        elif isinstance(turn, dict) and turn.get("role") == "user":
             messages.append(HumanMessage(content=turn.get("content", "")))
     messages.append(HumanMessage(content=state["query"]))
     return messages
@@ -802,7 +804,6 @@ with gr.Blocks(title="Apple Intelligence Hub") as demo:
         elem_id="chatbot",
         height=480,
         show_label=False,
-        type="messages",
         avatar_images=(None, "https://em-content.zobj.net/source/apple/391/robot_1f916.png"),
         render_markdown=True,
     )
@@ -824,13 +825,9 @@ with gr.Blocks(title="Apple Intelligence Hub") as demo:
         label="✨ Try an example",
     )
 
-    # FIX 3: use dict format to match chatbot type="messages"
     def respond(message: str, chat_history: list):
         bot_reply = chat_fn(message, chat_history)
-        chat_history = chat_history + [
-            {"role": "user",      "content": message},
-            {"role": "assistant", "content": bot_reply},
-        ]
+        chat_history = chat_history + [[message, bot_reply]]
         return "", chat_history
 
     send.click(respond, [msg, chatbot], [msg, chatbot])
