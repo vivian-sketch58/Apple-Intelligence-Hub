@@ -1,7 +1,7 @@
 langchain-groq 
 langchain-huggingface 
 langchain-chroma 
-langgraph>=0.2.28
+langgraph==0.2.56
 langchain-community 
 sentence-transformers 
 unstructured 
