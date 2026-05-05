@@ -335,7 +335,7 @@ def initialize_agents():
     _agents["product"] = create_react_agent(
         llm,
         tools=[product_hybrid_search, product_rag_tool, gemini_supplement_tool],
-        prompt=(
+        messages_modifier=(
             "You are the Product Agent. "
             "Handle buying questions, product specs, inventory, and prices. "
             "Use product_hybrid_search as your default first tool. "
@@ -350,7 +350,7 @@ def initialize_agents():
     _agents["policy"] = create_react_agent(
         llm,
         tools=[policy_hybrid_search, policy_rag_tool, gemini_supplement_tool],
-        prompt=(
+        messages_modifier=(
             "You are the Policy Agent. "
             "Handle return rules, warranty, shipping, and FAQ. "
             "Use policy_hybrid_search as your default first tool. "
@@ -363,7 +363,7 @@ def initialize_agents():
     _agents["tech"] = create_react_agent(
         llm,
         tools=[tech_hybrid_search, tech_rag_tool, gemini_supplement_tool],
-        prompt=(
+        messages_modifier=(
             "You are the Tech Agent. "
             "Handle troubleshooting and technical explanations. "
             "Use tech_hybrid_search as your default first tool. "
@@ -376,7 +376,7 @@ def initialize_agents():
     _agents["salary"] = create_react_agent(
         llm,
         tools=[predict_salary],
-        prompt=(
+        messages_modifier=(
             "You are the Salary Agent. "
             "Handle salary estimation questions using the predict_salary tool. "
             "If the user provides a DOB, convert it via the tool. "
@@ -388,7 +388,7 @@ def initialize_agents():
     _agents["general"] = create_react_agent(
         llm,
         tools=[general_hybrid_search, general_rag_tool, gemini_supplement_tool],
-        prompt=(
+        messages_modifier=(
             "You are the General Agent. "
             "Handle general chat, broad questions, and off-topic requests. "
             "Use general_hybrid_search as your default first tool. "
