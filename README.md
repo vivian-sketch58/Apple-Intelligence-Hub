@@ -1,3 +1,14 @@
+---
+title: Multi Agents
+emoji: 🍎
+colorFrom: indigo
+colorTo: indigo
+sdk: gradio
+sdk_version: 6.13.0
+app_file: app.py
+pinned: false
+---
+
 # 🍎 Apple Intelligence Hub
 
 A multi-agent AI assistant for Apple products — routing every customer query to the right specialist automatically.
